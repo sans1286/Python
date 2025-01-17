@@ -1,0 +1,20 @@
+import turtle
+import random
+def set_color():
+    r = random.randint(0, 225)
+    g =random.randint(0, 225)
+    b =random.randint(0, 225)
+    color = (r, g ,b)
+    return color
+turtle.speed(9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999)
+
+win = turtle.Screen()
+win.title('color')
+win.colormode(255)
+    turtle.goto(-100, 100)
+    turtle.fillcolor(set_color())
+    turtle.begin_fill()
+    turtle.circle( 50, 99999, steps=9)
+    turtle.end_fill()
+
+turtle.mainloop()
